@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Student Name - My Projects</title>
+    <!--references to the CSS documents for the website. I named the primary CSS file as "portfolio_main.css" in case we decide to split the CSS into multiple files-->
+    <link rel="stylesheet" type="text/css" href="css/portfolio_main.css">
+    <!--website javascript-->
+    <script src="js/portfolio.js"></script>
+</head>
+<body>
+	<!--NAVBAR-->
+    <nav class="portfolio-nav">
+        <div class="container">
+            <ul class="Menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="linkedin.html">LinkedIn</a></li>
+                <li><a href="github.html">Github</a></li>
+                <li><a href="myProjects.html">Projects</a>
+                <!--Drop Down Submenu-->
+                    <ul class="subMenu">
+                        <li><a href="liveProjects.html">Live Projects</a></li>
+                    </ul>
+                </li>
+                <!--End Drop Down Submenu-->
+                <li><a href="TechAcademy.html">Tech Academy</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!--END OF NAVBAR-->
+
+	<!--HEADER-->
+    <section id="home">
+        <div id="heading">
+            <!--picture of you. replace the image file this references with a picture of you, and adjust the path so it references the new image properly-->
+            <img src="images/coming_soon.jpg" id="title-image">
+        </div>
+    </section>
+    <!--END OF HEADER-->
+
+	<!--GITHUB PROJECTS-->
+	<section id="Projects">
+		<h3 class="portfolio-section-header">My Projects</h3>
+	    <div class="box">
+	        <!-- PHOTO-CONTAINER 1 -->
+	        <!--image that, when clicked, calls the JavaScript function to open one of your favorite projects on Github-->
+	        <div class="row">
+				<div class="photo-container">
+					<div class="photo">
+						<img src="images/coming_soon.jpg" alt="" id = "openModal">
+						<div class="photo-overlay" id="myModal">
+							<h3 class="white-head">Project Name</h3>
+							<button class = "ShowProject" onclick= "OpenProject()" >See more!</button>
+						</div>
+					</div>
+				</div>
+				<!-- END PHOTO-CONTAINER 1 -->
+				
+				<!-- PHOTO-CONTAINER 2 -->
+				<!--image that, when clicked, calls the JavaScript function to open one of your favorite projects on Github-->
+				<div class="photo-container">
+					<div class="photo">
+						<img src="images/coming_soon.jpg" alt="">
+						<div class="photo-overlay">
+							<h3 class="white-head">Project Name</h3>
+							<button class = "ShowProject" onclick= "OpenProject2()" >See more!</button>
+						</div>
+					</div>
+				</div>
+				<!-- END PHOTO-CONTAINER 2 -->
+				
+				<!-- PHOTO-CONTAINER 3 -->
+				<!--image that, when clicked, calls the JavaScript function to open one of your favorite projects on Github-->
+				<div class="photo-container">
+					<div class="photo">
+						<img src="images/coming_soon.jpg" alt="">
+						<div class="photo-overlay">
+							<h3 class="white-head">Project Name</h3>
+							<button class = "ShowProject" onclick= "OpenProject3()" >See more!</button>
+						</div>
+					</div>
+				</div>
+				<!-- END PHOTO-CONTAINER 3 -->
+			</div>
+	    </div>
+	</section>
+	<!--END OF GITHUB PROJECTS-->
+	
+	<!--FOOTER-->
+    <footer>
+        <p>
+            <center>&copy Prosper Consulting Inc.,  <a onclick="OpenTechAcademy()" style="text-decoration: underline blue; color: blue;">The Tech Academy</a></center><br>
+        </p>
+    </footer>
+    <!--END OF FOOTER->
+</body>
+</html>

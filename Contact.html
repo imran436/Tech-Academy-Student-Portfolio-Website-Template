@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Student Name - Contact ME</title>
+    <!--references to the CSS documents for the website. I named the primary CSS file as "portfolio_main.css" in case we decide to split the CSS into multiple files-->
+    <link rel="stylesheet" type="text/css" href="css/portfolio_main.css">
+    <!--website javascript-->
+    <script src="js/portfolio.js"></script>
+</head>
+<body>
+    <!--NAVBAR-->
+    <nav class="portfolio-nav">
+        <div class="container">
+            <ul class="Menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="linkedin.html">LinkedIn</a></li>
+                <li><a href="github.html">Github</a></li>
+                <li><a href="myProjects.html">Projects</a>
+                <!--Drop Down Submenu-->
+                    <ul class="subMenu">
+                        <li><a href="liveProjects.html">Live Projects</a></li>
+                    </ul>
+                </li>
+                <!--End Drop Down Submenu-->
+                <li><a href="TechAcademy.html">Tech Academy</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!--END OF NAVBAR-->
+
+    <!--HEADER-->
+    <section id="home">
+        <div id="heading">
+            <!--picture of you. replace the image file this references with a picture of you, and adjust the path so it references the new image properly-->
+            <img src="images/coming_soon.jpg" id="title-image">
+        </div>
+    </section>
+    <!--END OF HEADER-->
+
+    <!--CONTACT-->
+    <section id="contact">
+        <h3 class="portfolio-section-header">Contact</h3>
+        <div class="box">
+            <p id="portfolio-text">As a junior developer, I'm always looking to further expand upon my skills and add projects to my portfolio. If you're interested in hiring me, working on a collaborative programming project, or just have general questions, feel free to fill out the form below.</p>
+            <!--container holding the contact form-->
+            <div class="contact-form-container">
+                <form name="contact-form">
+                    <center>
+                        <input class="contact-input" type="text" value="Full Name">
+                        <input class="contact-input" type="text" value="Email Address">
+                        <input class="contact-input" type="text" value="Message">
+                        <!--container holding the Submit button-->
+                        <div class="submit">
+                            <input type="submit" Value="Submit">
+                        </div>
+                    </center>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!--END OF CONTACT-->
+    
+    <!--FOOTER-->
+    <footer>
+        <p>
+            <center>&copy Prosper Consulting Inc.,  <a onclick="OpenTechAcademy()" style="text-decoration: underline blue; color: blue;">The Tech Academy</a></center><br>
+        </p>
+    </footer>
+    <!--END OF FOOTER->
+</body>
+</html>
