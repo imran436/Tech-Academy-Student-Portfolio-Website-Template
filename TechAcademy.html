@@ -6,7 +6,7 @@
     <!--references to the CSS documents for the website. I named the primary CSS file as "portfolio_main.css" in case we decide to split the CSS into multiple files-->
     <link rel="stylesheet" type="text/css" href="css/portfolio_main.css">
     <!--website javascript-->
-    <script src="js/portfolio.js"></script>
+
 </head>
 <body>
     <!--NAVBAR-->
@@ -45,10 +45,12 @@
         <div class="box">
             <p id="portfolio-text">I studied programming at The Tech Academy, one of the highest rated coding bootcamps in the US. As one of their students, I developed a wide array of projects in a variety of languages, which you can learn more about on the Github page of this website.
                 <span class="break1"></span>
-                I encourage you to check out <a onclick="OpenTechAcademy()" style="text-decoration: underline blue; color: blue;">The Tech Academy's website</a> to see the different bootcamps they offer.
+                I encourage you to check out  <a href="https://www.learncodinganywhere.com/" target="_blank">The Tech Academy's website</a> to see the different bootcamps they offer.
                 <span class="break2"></span>
                 <!--image of the Tech Academy logo that, when clicked, calls the function to open the Tech Academy website in a new tab-->
-                <img src="images/tech_academy_logo.png" class="logo-image1" onclick="OpenTechAcademy()">
+                <a href="https://www.learncodinganywhere.com/" target="_blank">
+                    <img src="images/tech_academy_logo.png" class="logo-image1">
+                </a>
             </p>
         </div>
     </section>
@@ -57,7 +59,7 @@
     <!--FOOTER-->
     <footer>
         <p>
-            <center>&copy Prosper Consulting Inc.,  <a onclick="OpenTechAcademy()" style="text-decoration: underline blue; color: blue;">The Tech Academy</a></center><br>
+            <center>&copy Prosper Consulting Inc.,   <a href="https://www.learncodinganywhere.com/" target="_blank">The Tech Academy</a></center><br>
         </p>
     </footer>
     <!--END OF FOOTER->
