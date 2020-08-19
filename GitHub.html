@@ -6,7 +6,6 @@
     <!--references to the CSS documents for the website. I named the primary CSS file as "portfolio_main.css" in case we decide to split the CSS into multiple files-->
     <link rel="stylesheet" type="text/css" href="css/portfolio_main.css">
     <!--website javascript-->
-    <script src="js/portfolio.js"></script>
 </head>
 <body>
     <!--NAVBAR-->
@@ -47,8 +46,10 @@
                 <span class="break2"></span>
                 Take a look at some of my work.
                 <span class="break2"></span>
-                <!--image that, when clicked, calls the function to open the link to your Github page in a new tab-->
-                <img src="images/github_logo.png" class="logo-image1" onclick="OpenGithub()">
+                <!--image that, when clicked, uses anchor tags to link to Github Href property provides link target property allows this to open in a new tab-->
+                <a href="" target="_blank">
+                    <img src="images/github_logo.png" class="logo-image1">
+                </a>
             </p>
         </div>
     </section>
@@ -57,7 +58,7 @@
     <!--FOOTER-->
     <footer>
         <p>
-            <center>&copy Prosper Consulting Inc.,  <a onclick="OpenTechAcademy()" style="text-decoration: underline blue; color: blue;">The Tech Academy</a></center><br>
+            <center>&copy Prosper Consulting Inc.,  <a href="https://www.learncodinganywhere.com/" target="_blank">The Tech Academy</a></center><br>
         </p>
     </footer>
     <!--END OF FOOTER->
